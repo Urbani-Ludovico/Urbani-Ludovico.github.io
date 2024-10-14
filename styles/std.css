@@ -33,29 +33,33 @@ ul {
     width: max-content;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /**********  Titles  **********/
 
 .title, .subtitle, .ssubtitle {
     color: var(--title-color);
     display: block;
-    margin: 20px 0 10px 0;
+    margin: 40px 0 10px 0;
     text-align: center;
     width: 100%;
 }
 
 .title {
-    font-size: xx-large;
-    font-weight: bolder;
-}
-
-.subtitle {
     font-size: x-large;
     font-weight: bolder;
 }
 
-.ssubtitle {
+.subtitle {
     font-size: large;
+    font-weight: bolder;
+}
+
+.ssubtitle {
+    font-size: larger;
     font-weight: bold;
 }
 
@@ -106,6 +110,32 @@ header > div.content > .definition {
     font-size: large;
     font-style: italic;
     margin-bottom: 20px;
+}
+
+/**********  Two column key-value  **********/
+
+div.c2-key-value {
+    display: grid;
+    gap: 5px 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    width: 100%;
+}
+
+div.c2-key-value > * {
+    display: block;
+    width: 100%;
+}
+
+div.c2-key-value > .key {
+    color: gray;
+    grid-column: 1;
+    text-align: right;
+}
+
+div.c2-key-value > .value {
+    grid-column: 2;
+    text-align: left;
 }
 
 

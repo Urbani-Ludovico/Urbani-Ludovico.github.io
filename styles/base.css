@@ -136,13 +136,22 @@ button.free {
     text-decoration: none;
 }
 
-img.icon {
+img.icon,
+img.icon-small {
     display: inline-block;
-    height: 22px;
     margin: auto 3px;
     object-fit: contain;
     vertical-align: middle;
+}
+
+img.icon {
+    height: 22px;
     width: 22px;
+}
+
+img.icon-small {
+    height: 16px;
+    width: 16px;
 }
 
 img.icon.unselect {
