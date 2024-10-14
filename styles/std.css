@@ -1,0 +1,71 @@
+
+:root {
+    --main-color: #0080FF;
+    --second-color: #004C99;
+
+    --title-color: var(--second-color);
+    --focus-color: #FF8000;
+    --notfocus-color: gray;
+    --shadow: gray;
+
+    --border-radius: 15px;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    overflow-x: hidden;
+    overflow-y: visible;
+    width: 100%;
+}
+
+ul {
+    margin: auto;
+    max-width: 100%;
+    text-align: left;
+    width: max-content;
+}
+
+
+/**********  Titles  **********/
+
+.title, .subtitle, .ssubtitle {
+    color: var(--title-color);
+    display: block;
+    margin: 20px 0 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.subtitle {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.ssubtitle {
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/**********  Timeline  **********/
+
+div.timeline {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 1fr;
+    max-width: 800px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    width: 100%;
+}
