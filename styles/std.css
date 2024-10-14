@@ -40,12 +40,30 @@ a {
 
 /**********  Titles  **********/
 
-.title, .subtitle, .ssubtitle {
+.section, .title, .subtitle, .ssubtitle {
     color: var(--title-color);
     display: block;
-    margin: 40px 0 10px 0;
     text-align: center;
     width: 100%;
+}
+
+.section {
+    color: var(--title-color);
+    display: block;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.section:before {
+    content: "-- ";
+}
+
+.section:after {
+    content: " --";
+}
+
+.title, .subtitle, .ssubtitle {
+    margin: 40px 0 10px 0;
 }
 
 .title {
