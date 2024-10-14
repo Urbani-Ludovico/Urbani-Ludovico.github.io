@@ -58,6 +58,54 @@ ul {
 }
 
 
+/**********  Header  **********/
+
+header {
+    background: linear-gradient(to bottom, var(--main-color), white);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: auto;
+    margin: 0 0 50px 0;
+    padding: 10px 10px 30px 10px;
+    width: 100%;
+}
+
+header > img.profile {
+    aspect-ratio: 4 / 5;
+    border-radius: var(--border-radius);
+    grid-column: 1 ;
+    grid-row: 1;
+    height: 200px;
+    margin: 0 0 0 auto;
+    max-width: 80%;
+    object-fit: cover;
+}
+
+header > div.content {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+header > div.content > * {
+    display: block;
+    width: 100%;
+}
+
+header > div.content > .name {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+header > div.content > .definition {
+    font-size: large;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
 /**********  Timeline  **********/
 
 div.timeline {
