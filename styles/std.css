@@ -21,7 +21,9 @@ body {
 main {
     overflow-x: hidden;
     overflow-y: visible;
-    width: 100%;
+    margin: 50px auto 50px auto;
+    max-width: 100vh;
+    width: 90%;
 }
 
 ul {
@@ -105,6 +107,7 @@ header > div.content > .definition {
     font-style: italic;
     margin-bottom: 20px;
 }
+
 
 /**********  Timeline  **********/
 
