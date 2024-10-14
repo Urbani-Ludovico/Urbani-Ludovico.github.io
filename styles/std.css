@@ -37,6 +37,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--focus-color);
+}
+
 
 /**********  Titles  **********/
 
@@ -91,6 +95,7 @@ menu {
     height: 100vh;
     left: 0;
     margin: 0;
+    padding: 40px 20px 40px 30px;
     position: fixed;
     top: 0;
     width: min(80vw, 300px);
@@ -109,6 +114,25 @@ button.menu-button {
 button.menu-button > img {
     display: block;
     height: 25px;
+}
+
+menu > a {
+    display: block;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+menu > a.sub {
+    font-weight: normal;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+menu > a.sub:before {
+    content: "> ";
 }
 
 
