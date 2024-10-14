@@ -82,6 +82,36 @@ a {
 }
 
 
+/**********  Titles  **********/
+
+menu {
+    background: white;
+    box-shadow: 0 0 20px 20px #C0C0C0;
+    display: none;
+    height: 100vh;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: min(80vw, 300px);
+    z-index: 99;
+}
+
+button.menu-button {
+    cursor: pointer;
+    display: block;
+    left: 10px;
+    position: fixed;
+    top: 10px;
+    z-index: 100;
+}
+
+button.menu-button > img {
+    display: block;
+    height: 25px;
+}
+
+
 /**********  Header  **********/
 
 header {
