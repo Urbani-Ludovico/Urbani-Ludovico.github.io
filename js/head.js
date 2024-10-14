@@ -4,23 +4,46 @@ function headInit({
                   }) {
     const head = document.getElementsByTagName("head")[0];
 
-    let content = "<meta charset=\"UTF-8\">" +
-        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0\" />" +
-        "<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles/base.css\">" +
-        "<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles/std.css\">" +
-        "<link rel=\"icon\" href=\"/static/icon.svg\">";
+    const charset = document.createElement("meta");
+    charset.charset = "UTF-8";
+    head.appendChild(charset);
 
+    const viewport = document.createElement("meta");
+    viewport.name = "viewport";
+    viewport.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0";
+    head.appendChild(viewport);
+
+    const stylesheet_base = document.createElement("link");
+    stylesheet_base.rel = "stylesheet";
+    stylesheet_base.type = "text/css";
+    stylesheet_base.href = "/styles/base.css";
+    head.appendChild(stylesheet_base);
+
+    const stylesheet_std = document.createElement("link");
+    stylesheet_std.rel = "stylesheet";
+    stylesheet_std.type = "text/css";
+    stylesheet_std.href = "/styles/std.css";
+    head.appendChild(stylesheet_std);
+
+    const icon = document.createElement("link");
+    icon.rel = "icon";
+    icon.href = "/static/icon.png";
+    head.appendChild(icon);
+
+    const title_el = document.createElement("title");
     if (!!title) {
-        content += "<title>" + title + " | Urbani Ludovico - Curriculum</title>"
+        title_el.innerText = title + " | Ludovico Urbani - Curriculum";
     } else {
-        content += "<title>Urbani Ludovico - Curriculum</title>"
+        title_el.innerText = "Ludovico Urbani - Curriculum";
     }
+    head.appendChild(title_el);
 
+    const style_add = document.createElement("style");
+    style_add.rel = "stylesheet";
     if (style === "judo") {
-        content += "<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles/judo.css\">"
+        style_add.href = "/styles/judo.css";
+        head.appendChild(style_add);
     }
-
-    head.innerHTML = content;
 }
 
 function headerInit() {
