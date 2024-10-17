@@ -210,11 +210,78 @@ div.c2-key-value > .value {
 /**********  Timeline  **********/
 
 div.timeline {
+    --thick-height: 28px;
+    --thick-width: calc(var(--thick-height) * 0.6);
+    --content-border-width: 4px;
+    --line-width: 16px;
+
     display: grid;
     grid-template-columns: max-content 1fr;
-    grid-template-rows: 1fr;
-    max-width: 800px;
+    grid-template-rows: auto;
+    gap: 10px var(--thick-width);
+    margin: auto;
+    max-width: 100%;
     overflow-x: hidden;
     overflow-y: visible;
-    width: 100%;
+    width: max-content;
+}
+
+div.timeline > div.line {
+    background-color: var(--main-color);
+    border-top-left-radius: calc(var(--line-width) * 0.5);
+    border-top-right-radius: calc(var(--line-width) * 0.5);
+    grid-column: 1;
+    grid-row-start: 1;
+    height: calc(100% - var(--line-width));
+    margin: 0 auto auto auto
+;
+    width: var(--line-width);
+}
+
+div.timeline > div.line-arrow {
+    background-color: transparent;
+    border-left: calc(var(--line-width) * 1.5) solid transparent;
+    border-right: calc(var(--line-width) * 1.5) solid transparent;
+    border-top: calc(var(--line-width) * 3) solid var(--main-color);
+    grid-column: 1;
+    height: 0;
+    width: 0;
+}
+
+div.timeline > div.line-dot {
+    --radius: calc(var(--thick-height) * 0.5);
+
+    background-color: white;
+    border: calc(var(--radius) * 0.4) solid var(--main-color);
+    border-radius: 50%;
+    grid-column: 1;
+    height: calc(var(--radius) * 2);
+    margin: 0 auto auto auto;
+    width: calc(var(--radius) * 2);
+}
+
+div.timeline > div.content {
+    --border-width: var(--content-border-width);
+
+    border: var(--border-width) solid var(--main-color);
+    grid-column: 2;
+    height: max-content;
+    min-height: var(--thick-height);
+    min-width: var(--thick-height);
+    position: relative;
+    width: max-content;
+}
+
+div.timeline > div.content > div.arrow {
+    --radius: calc(var(--thick-height) * 0.5);
+
+    background-color: transparent;
+    border-bottom: calc(var(--thick-height) * 0.5) solid transparent;
+    border-right: calc(var(--thick-width)) solid var(--main-color);
+    border-top: calc(var(--thick-height) * 0.5) solid transparent;
+    height: 0;
+    left: calc(0px - var(--thick-width) - var(--border-width));
+    position: absolute;
+    top: calc(0px - var(--border-width));
+    width: 0;
 }
