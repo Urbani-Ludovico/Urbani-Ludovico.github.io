@@ -27,7 +27,7 @@ function headInit({
 
     const icon = document.createElement("link");
     icon.rel = "icon";
-    icon.href = "/static/icon.png";
+    icon.href = "/static/icon.svg";
     head.appendChild(icon);
 
     const title_el = document.createElement("title");
