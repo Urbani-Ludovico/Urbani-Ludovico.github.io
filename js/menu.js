@@ -38,14 +38,18 @@ function createMenu() {
 
     menuElements.forEach(element => {
         const el = document.createElement("a");
-        el.href = element.href;
+        if ("href" in el) {
+            el.href = element.href;
+        }
         el.innerText = element.title;
         menu.appendChild(el);
 
         if ("children" in element) {
             element.children.forEach(child => {
                 const ch = document.createElement("a");
-                ch.href = child.href;
+                if ("href" in ch) {
+                    ch.href = child.href;
+                }
                 ch.innerText = child.title;
                 ch.classList.add("sub");
                 menu.appendChild(ch);
