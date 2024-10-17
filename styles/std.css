@@ -41,6 +41,12 @@ a:hover {
     color: var(--focus-color);
 }
 
+@media screen and (max-width: 400px) {
+    main {
+        width: 95%;
+    }
+}
+
 
 /**********  Titles  **********/
 
@@ -180,6 +186,20 @@ header > div.content > .definition {
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 400px) {
+    header {
+        display: block;
+    }
+
+    header > img.profile {
+        margin: auto;
+    }
+
+    header > div.content {
+        text-align: center;
+    }
+}
+
 /**********  Two column key-value  **********/
 
 div.c2-key-value {
@@ -269,12 +289,13 @@ div.timeline > div.content {
     border-top-left-radius: 0;
     grid-column: 2;
     height: max-content;
+    max-width: 100%;
     min-height: calc(var(--thick-height) * 2);
     min-width: calc(var(--thick-height) * 2);
     padding: 10px;
     position: relative;
     text-align: left;
-    width: max-content;
+    width: auto;
 }
 
 div.timeline > div.content > div.arrow {
@@ -317,4 +338,11 @@ div.timeline > div.content span.released-by {
 
 div.timeline > div.content span.date {
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    div.timeline {
+        --thick-height: 20px;
+        --line-width: 12px;
+    }
 }
