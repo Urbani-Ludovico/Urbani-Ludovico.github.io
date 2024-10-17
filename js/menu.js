@@ -9,11 +9,11 @@ const menuElements = [
         children: [
             {
                 title: "Titoli",
-                href: "judo/titoli.html"
+                href: "/judo/titoli.html"
             },
             {
                 title: "Corsi",
-                href: "judo/corsi.html"
+                href: "/judo/corsi.html"
             }
         ]
     }
