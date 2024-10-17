@@ -14,6 +14,10 @@ function createTimeline({
         line.classList.add("line");
         timeline.appendChild(line);
 
+        const arrow = document.createElement("div");
+        arrow.classList.add("line-arrow");
+        timeline.appendChild(arrow);
+
         let row = 2;
         events.forEach(event => {
             // Dot
@@ -72,11 +76,6 @@ function createTimeline({
         });
 
         line.style.gridRowEnd = (row + 1).toString();
-
-        const arrow = document.createElement("div");
-        arrow.classList.add("line-arrow");
-        arrow.style.gridRow = row.toString();
-        timeline.appendChild(arrow);
     }
 }
 

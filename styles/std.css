@@ -228,22 +228,23 @@ div.timeline {
 
 div.timeline > div.line {
     background-color: var(--main-color);
-    border-top-left-radius: calc(var(--line-width) * 0.5);
-    border-top-right-radius: calc(var(--line-width) * 0.5);
+    border-bottom-left-radius: calc(var(--line-width) * 0.5);
+    border-bottom-right-radius: calc(var(--line-width) * 0.5);
     grid-column: 1;
     grid-row-start: 1;
     height: calc(100% - var(--line-width));
-    margin: 0 auto auto auto
+    margin: auto auto 0 auto
 ;
     width: var(--line-width);
 }
 
 div.timeline > div.line-arrow {
     background-color: transparent;
+    border-bottom: calc(var(--line-width) * 3) solid var(--main-color);
     border-left: calc(var(--line-width) * 1.5) solid transparent;
     border-right: calc(var(--line-width) * 1.5) solid transparent;
-    border-top: calc(var(--line-width) * 3) solid var(--main-color);
     grid-column: 1;
+    grid-row: 1;
     height: 0;
     width: 0;
 }
