@@ -1,7 +1,6 @@
-
 function createTimeline({
-    events
-}) {
+                            events
+                        }) {
     if (events.length > 0) {
         const s = document.getElementsByTagName("script");
         const parent = s[s.length - 1].parentElement;

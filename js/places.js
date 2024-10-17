@@ -1,4 +1,3 @@
-
 const places = {
     sports_hall: {
         grado: "Palazzetto dello Sport, Piazzale Azzurri d'Italia 1 - Grado (IT)",

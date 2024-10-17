@@ -154,7 +154,7 @@ header {
 header > img.profile {
     aspect-ratio: 4 / 5;
     border-radius: var(--border-radius);
-    grid-column: 1 ;
+    grid-column: 1;
     grid-row: 1;
     height: 200px;
     margin: 0 0 0 auto;
@@ -253,8 +253,7 @@ div.timeline > div.line {
     grid-column: 1;
     grid-row-start: 1;
     height: calc(100% - var(--line-width));
-    margin: auto auto 0 auto
-;
+    margin: auto auto 0 auto;
     width: var(--line-width);
 }
 
