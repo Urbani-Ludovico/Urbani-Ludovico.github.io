@@ -1,7 +1,7 @@
 const places = {
     sports_hall: {
         benedetti: "Palazzetto dello sport M. Benedetti - Via A. Marangoni 46, Udine (IT)",
-        dvorana_maksa: "Dvorana Maksa Pe£arja - rnu²ka cesta 9, Ljubljana (SLO)",
+        dvorana_maksa: "Dvorana Maksa Pečarja - Črnuška cesta 9, Ljubljana (SLO)",
         grado: "Palazzetto dello Sport - Piazzale Azzurri d'Italia 1, Grado (IT)",
         laipacco: "Palestra E. Cernich - Via Laipacco 96, Udine (IT)",
         palamichieletto: "Palamichieletto - Via Cartiera Vecchia 58, Sacile (IT)",
