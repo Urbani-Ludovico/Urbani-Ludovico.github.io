@@ -10,6 +10,10 @@ const menuElements = [
             {
                 title: "Titoli",
                 href: "judo/titoli.html"
+            },
+            {
+                title: "Corsi",
+                href: "judo/corsi.html"
             }
         ]
     }

@@ -313,26 +313,29 @@ div.timeline > div.content > div.arrow {
 }
 
 div.timeline > div.content span {
+    color: black;
     display: block;
+    font-size: smaller;
+    margin: 0 0 2px 0;
     max-width: 100%;
     text-align: inherit;
 }
 
-div.timeline > div.content span.title {
-    color: black;
-    font-size: larger;
+div.timeline > div.content span.title,
+div.timeline > div.content span.subtitle {
     font-weight: bold;
     margin: 0 0 10px 0
+}
+
+div.timeline > div.content span.title {
+    font-size: larger;
 }
 
 div.timeline > div.content span.date,
 div.timeline > div.content span.effective-date,
 div.timeline > div.content span.place,
 div.timeline > div.content span.released-by {
-    color: black;
-    font-size: smaller;
     font-style: italic;
-    margin: 0 0 2px 0;
 }
 
 div.timeline > div.content span.date {

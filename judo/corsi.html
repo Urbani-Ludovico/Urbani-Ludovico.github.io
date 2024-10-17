@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <script src="/js/head.js"></script>
+    <script>
+        headInit({
+            title: "Judo: corsi",
+            style: "judo"
+        });
+    </script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/timeline.js"></script>
+    <script src="/js/places.js"></script>
+</head>
+<body>
+<menu>
+    <script>createMenu();</script>
+</menu>
+<header>
+    <script>headerInit();</script>
+</header>
+<main>
+    <h2 class="section">Judo</h2>
+
+    <h3 class="title">Corsi</h3>
+    <script>
+        createTimeline({
+            events: [
+                {
+                    title: "Educare, addrestrare e allenare nelle fasi di formazione motorio-sportiva",
+                    date: "2024-10-10",
+                    place: places.coni_fvg,
+                    teacher: "Stefano Gioia",
+                    made_from: entities.coni_fvg_scuola,
+                    hours: 2
+                },
+                {
+                    title: "Lo sport che funziona",
+                    subtitle: "Autonomia, emozioni, amicizia, disciplina, ecacia, utilità",
+                    date: "2024-06-05",
+                    place: places.coni_fvg,
+                    teacher: "Stefano Bearzi",
+                    made_from: entities.coni_fvg_scuola,
+                    hours: 2
+                },
+                {
+                    title: "Kata Seminar & Children Kata Festival",
+                    dates_range: {
+                        from: "2024-05-25",
+                        to: "2024-05-26"
+                    },
+                    place: places.sports_hall.dvorana_maksa,
+                    teacher: "Slavi²a Bradi¢",
+                    made_from: entities.eju,
+                    hours: 10
+                },
+                {
+                    title: "Sport - Prevenzione - Benessere",
+                    date: "2024-05-04",
+                    place: places.salone_incanti,
+                    made_from: entities.units,
+                    hours: 7
+                },
+                {
+                    title: "SportivaMente",
+                    dates_range: {
+                        from: "2024-02-22",
+                        to: "2024-02-23"
+                    },
+                    place: places.uniud_scienze_motorie,
+                    teacher: "Stefano Canali",
+                    made_from: entities.uniud,
+                    hours: 10
+                },
+                {
+                    title: "Allenare gli Under 8",
+                    dates: ["2023-12-02", "2024-01-27", "2024-04-09"],
+                    place: places.sports_hall.laipacco,
+                    teacher: "Elena Conti e Luisa Menapace",
+                    made_from: entities.coni_fvg_scuola,
+                    hours: 12
+                },
+                {
+                    title: "Dal Kata alla Tecnica",
+                    date: "2023-09.10",
+                    place: places.azzanese,
+                    teacher: "Piero Comino",
+                    hours: 3
+                },
+                {
+                    title: "Attività motoria e sportiva di base",
+                    date: "2023-06-25",
+                    place: places.coni_fvg,
+                    made_from: entities.coni_fvg_scuola,
+                    hours: 3
+                },
+                {
+                    title: "Allenare gli Under 8",
+                    date: "2023-04-29",
+                    place: places.sports_hall.benedetti,
+                    teacher: "Elena Conti e Luisa Menapace",
+                    made_from: entities.coni_fvg_scuola,
+                    hours: 6
+                }
+            ]
+        });
+    </script>
+</main>
+</body>
+</html>

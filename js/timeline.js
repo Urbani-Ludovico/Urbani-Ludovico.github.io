@@ -43,9 +43,26 @@ function createTimeline({
                 content.appendChild(title);
             }
 
+            if ("subtitle" in event) {
+                const subtitle = document.createElement("span");
+                subtitle.innerText = event.subtitle;
+                subtitle.classList.add("subtitle");
+                content.appendChild(subtitle);
+            }
+
             if ("date" in event) {
                 const date = document.createElement("span");
                 date.innerText = format_date(event.date);
+                date.classList.add("date");
+                content.appendChild(date);
+            } else if ("dates_range" in event) {
+                const date = document.createElement("span");
+                date.innerText = "Dal " + format_date(event.dates_range.from) + " al " + format_date(event.dates_range.to);
+                date.classList.add("date");
+                content.appendChild(date);
+            } else if ("dates" in event) {
+                const date = document.createElement("span");
+                date.innerText =  event.dates.map(d => format_date(d)).join(", ");
                 date.classList.add("date");
                 content.appendChild(date);
             }
@@ -69,6 +86,27 @@ function createTimeline({
                 released_by.innerText = "Rilasciato da: " + event.released_by;
                 released_by.classList.add("released-by");
                 content.appendChild(released_by);
+            }
+
+            if ("teacher" in event) {
+                const teacher = document.createElement("span");
+                teacher.innerText = "Docente: " + event.teacher;
+                teacher.classList.add("teacher");
+                content.appendChild(teacher);
+            }
+
+            if ("made_from" in event) {
+                const made_from = document.createElement("span");
+                made_from.innerText = "Organizzato da: " + event.made_from;
+                made_from.classList.add("made-from");
+                content.appendChild(made_from);
+            }
+
+            if ("hours" in event) {
+                const hours = document.createElement("span");
+                hours.innerText = event.hours + " ore";
+                hours.classList.add("teacher");
+                content.appendChild(hours);
             }
 
             row++;
