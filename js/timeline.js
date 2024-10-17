@@ -33,6 +33,41 @@ function createTimeline({
             arrow.style.gridRow = row.toString();
             content.appendChild(arrow);
 
+            if ("title" in event) {
+                const title = document.createElement("span");
+                title.innerText = event.title;
+                title.classList.add("title");
+                content.appendChild(title);
+            }
+
+            if ("date" in event) {
+                const date = document.createElement("span");
+                date.innerText = format_date(event.date);
+                date.classList.add("date");
+                content.appendChild(date);
+            }
+
+            if ("place" in event) {
+                const place = document.createElement("span");
+                place.innerText = format_date(event.place);
+                place.classList.add("place");
+                content.appendChild(place);
+            }
+
+            if ("effective_date" in event) {
+                const date = document.createElement("span");
+                date.innerText = "Decorrenza dal: " + format_date(event.effective_date);
+                date.classList.add("effective-date");
+                content.appendChild(date);
+            }
+
+            if ("released_by" in event) {
+                const released_by = document.createElement("span");
+                released_by.innerText = "Rilasciato da: " + format_date(event.released_by);
+                released_by.classList.add("released-by");
+                content.appendChild(released_by);
+            }
+
             row++;
         });
 
@@ -43,4 +78,8 @@ function createTimeline({
         arrow.style.gridRow = row.toString();
         timeline.appendChild(arrow);
     }
+}
+
+function format_date(date) {
+    return date;
 }

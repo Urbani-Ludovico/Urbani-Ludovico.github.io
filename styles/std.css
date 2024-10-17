@@ -264,11 +264,15 @@ div.timeline > div.content {
     --border-width: var(--content-border-width);
 
     border: var(--border-width) solid var(--main-color);
+    border-radius: var(--border-radius);
+    border-top-left-radius: 0;
     grid-column: 2;
     height: max-content;
-    min-height: var(--thick-height);
-    min-width: var(--thick-height);
+    min-height: calc(var(--thick-height) * 2);
+    min-width: calc(var(--thick-height) * 2);
+    padding: 10px;
     position: relative;
+    text-align: left;
     width: max-content;
 }
 
@@ -280,8 +284,36 @@ div.timeline > div.content > div.arrow {
     border-right: calc(var(--thick-width)) solid var(--main-color);
     border-top: calc(var(--thick-height) * 0.5) solid transparent;
     height: 0;
-    left: calc(0px - var(--thick-width) - var(--border-width));
+    left: calc(1px - var(--thick-width) - var(--border-width));
+    max-width: 100%;
     position: absolute;
     top: calc(0px - var(--border-width));
     width: 0;
+}
+
+div.timeline > div.content span {
+    display: block;
+    max-width: 100%;
+    text-align: inherit;
+}
+
+div.timeline > div.content span.title {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    margin: 0 0 10px 0
+}
+
+div.timeline > div.content span.date,
+div.timeline > div.content span.effective-date,
+div.timeline > div.content span.place,
+div.timeline > div.content span.released-by {
+    color: black;
+    font-size: smaller;
+    font-style: italic;
+    margin: 0 0 2px 0;
+}
+
+div.timeline > div.content span.date {
+    margin-bottom: 10px;
 }
