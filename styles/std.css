@@ -52,18 +52,14 @@ a:hover {
 }
 
 .section {
+    border-image: linear-gradient(to right, white, var(--main-color), white) 1 0%;
+    border-style: solid;
+    border-width: 2px;
     color: var(--title-color);
     display: block;
     font-size: x-large;
     font-weight: bold;
-}
-
-.section:before {
-    content: "-- ";
-}
-
-.section:after {
-    content: " --";
+    text-transform: uppercase;
 }
 
 .title, .subtitle, .ssubtitle {
