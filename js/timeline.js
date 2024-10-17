@@ -53,7 +53,7 @@ function createTimeline({
 
             if ("place" in event) {
                 const place = document.createElement("span");
-                place.innerText = format_date(event.place);
+                place.innerText = event.place;
                 place.classList.add("place");
                 content.appendChild(place);
             }
@@ -67,7 +67,7 @@ function createTimeline({
 
             if ("released_by" in event) {
                 const released_by = document.createElement("span");
-                released_by.innerText = "Rilasciato da: " + format_date(event.released_by);
+                released_by.innerText = "Rilasciato da: " + event.released_by;
                 released_by.classList.add("released-by");
                 content.appendChild(released_by);
             }
