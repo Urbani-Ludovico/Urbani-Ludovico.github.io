@@ -109,6 +109,13 @@ function createTimeline({
                 content.appendChild(hours);
             }
 
+            if ("inner_html" in event) {
+                const inner_html = document.createElement("div");
+                inner_html.innerHTML = event.inner_html;
+                inner_html.classList.add("inner-html");
+                content.appendChild(inner_html);
+            }
+
             row++;
         });
 

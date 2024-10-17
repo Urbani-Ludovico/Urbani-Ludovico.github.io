@@ -8,7 +8,8 @@ const places = {
         },
         pordenone: {
             judo_azzanese: "Judo Azzanese - Via Divisione Julia 11/A, Azzano X (IT)",
-            palamichieletto: "Palamichieletto - Via Cartiera Vecchia 58, Sacile (IT)"
+            palamichieletto: "Palamichieletto - Via Cartiera Vecchia 58, Sacile (IT)",
+            palazzo_ragazzoni: "Palazzo Ragazzoni - Viale P. Zanzanaro 2, Sacile (IT)"
         },
         trieste: {
             dojo_trieste: "ASD DOJO Trieste - Via dei Mille 18, Trieste (IT)",

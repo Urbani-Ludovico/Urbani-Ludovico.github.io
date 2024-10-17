@@ -312,7 +312,7 @@ div.timeline > div.content > div.arrow {
     width: 0;
 }
 
-div.timeline > div.content span {
+div.timeline > div.content > * {
     color: black;
     display: block;
     font-size: smaller;
@@ -340,6 +340,10 @@ div.timeline > div.content span.released-by {
 
 div.timeline > div.content span.date {
     margin-bottom: 10px;
+}
+
+div.timeline > div.content > div.inner-html ul {
+    padding-left: 15pt;
 }
 
 @media screen and (max-width: 400px) {
