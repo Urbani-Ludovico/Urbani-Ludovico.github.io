@@ -5,7 +5,7 @@ function headInit({
     const head = document.getElementsByTagName("head")[0];
 
     const charset = document.createElement("meta");
-    charset.charset = "UTF-8";
+    charset.setAttribute("charset", "UTF-8");
     head.appendChild(charset);
 
     const viewport = document.createElement("meta");
