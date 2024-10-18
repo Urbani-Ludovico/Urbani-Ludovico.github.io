@@ -14,11 +14,6 @@ function headInit({
     viewport.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0";
     head.appendChild(viewport);
 
-    const google_verification = document.createElement("meta");
-    google_verification.name = "google-site-verification";
-    google_verification.content = "zk4bv6arfBwX36NH_ncj8vuPLLkalSAb5MspmWDAvNI";
-    head.appendChild(google_verification);
-
     const stylesheet_base = document.createElement("link");
     stylesheet_base.rel = "stylesheet";
     stylesheet_base.type = "text/css";
