@@ -27,6 +27,7 @@ const places = {
             finanza: "Palazzetto della guardia di finanaza - Via Fiamme Gialle, L'Aquila (IT)"
         },
         pordenone: {
+            favorita: "Palazzatto dello Sport Favorita - Via degli Abeti 9, Spilimbergo (PN)",
             flora: "Palestra Flora - Via Peruzza 10, Pordenone (IT)",
             judo_azzanese: "Judo Azzanese - Via Divisione Julia 11/A, Azzano X (IT)",
             moneterale: "Palazzetto dello Sport - Monetereale Valcellina (IT)",
@@ -53,6 +54,7 @@ const places = {
             bella_italia: "Bella Italia Village - Via Centrale 22, Lignano Sabbiadoro (IT)",
             benedetti: "Palazzetto dello sport M. Benedetti - Via A. Marangoni 46, Udine (IT)",
             laipacco: "Palestra E. Cernich - Via Laipacco 96, Udine (IT)",
+            latisana: "Palazzatto dello sport - Via G. Bottari 33, Latisana (IT)",
             tarcento: "Palzzetto dello Sport - Via Sottocolle Verzan 25, Tarcento (IT)",
             uniud_scienze_motorie: "Facoltà di Scienze Motorie (UniUD) - Gemona del Friuli (IT)"
         }
