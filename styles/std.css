@@ -342,6 +342,10 @@ div.timeline > div.content span.date {
     margin-bottom: 10px;
 }
 
+div.timeline > div.content span.result {
+    font-weight: bold;
+}
+
 div.timeline > div.content > div.inner-html ul {
     padding-left: 15pt;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <script src="/js/head.js"></script>
+    <script>
+        headInit({
+            title: "Judo: corsi",
+            style: "judo"
+        });
+    </script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/timeline.js"></script>
+    <script src="/js/places.js"></script>
+</head>
+<body>
+<menu>
+    <script>createMenu();</script>
+</menu>
+<header>
+    <script>headerInit();</script>
+</header>
+<main>
+    <h2 class="section">Judo</h2>
+
+    <h3 class="title">Competizioni</h3>
+
+    <h4 class="subtitle">Kata</h4>
+    <script>
+        katas = {
+            itsutsu: "Itsutsu-No-Kata",
+            kime: "Kime-No-Kata"
+        };
+
+        createTimeline({
+            events: [
+                {
+                    title: "Coppa Regione FVG",
+                    date: "2024-10-05",
+                    place: places.italy.pordenone.palamichieletto,
+                    result: "1° posto",
+                    kata: katas.kime,
+                    kata_role: "uke",
+                    partner: "Paola Sist"
+                },
+                {
+                    title: "Campionati Italiani A2",
+                    date: "2024-07-06",
+                    place: places.italy.roma.palapellicone,
+                    result: "2° posto",
+                    kata: katas.kime,
+                    kata_role: "uke",
+                    partner: "Paola Sist"
+                },
+                {
+                    title: "Grand Prix Emilia Romagna A2",
+                    date: "2024-04-21",
+                    place: places.italy.bologna.centro_tecnico,
+                    result: "2° posto",
+                    kata: katas.kime,
+                    kata_role: "uke",
+                    partner: "Paola Sist"
+                },
+                {
+                    title: "XVI Memorial Otello Bisi",
+                    date: "2024-04-21",
+                    place: places.italy.bologna.centro_tecnico,
+                    result: "3° posto",
+                    kata: katas.itsutsu,
+                    kata_role: "uke",
+                    partner: "Paola Sist"
+                },
+                {
+                    title: "Grand Prix Villanova A2",
+                    date: "2024-03-24",
+                    place: places.italy.pordenone.flora,
+                    result: "2° posto",
+                    kata: katas.kime,
+                    kata_role: "uke",
+                    partner: "Paola Sist"
+                }
+            ]
+        });
+    </script>
+</main>
+</body>
+</html>

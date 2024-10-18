@@ -67,6 +67,13 @@ function createTimeline({
                 content.appendChild(date);
             }
 
+            if ("result" in event) {
+                const result = document.createElement("span");
+                result.innerText = event.result;
+                result.classList.add("result");
+                content.appendChild(result);
+            }
+
             if ("place" in event) {
                 const place = document.createElement("span");
                 place.innerText = event.place;
@@ -107,6 +114,27 @@ function createTimeline({
                 hours.innerText = event.hours + " ore";
                 hours.classList.add("teacher");
                 content.appendChild(hours);
+            }
+
+            if ("kata" in event) {
+                const kata = document.createElement("span");
+                kata.innerText = "Kata: " + event.kata;
+                kata.classList.add("kata");
+                content.appendChild(kata);
+            }
+
+            if ("kata_role" in event) {
+                const role = document.createElement("span");
+                role.innerText = "Ruolo: " + event.kata_role;
+                role.classList.add("kata-role");
+                content.appendChild(role);
+            }
+
+            if ("partner" in event) {
+                const partner = document.createElement("span");
+                partner.innerText = "Partner: " + event.partner;
+                partner.classList.add("partner");
+                content.appendChild(partner);
             }
 
             if ("inner_html" in event) {

@@ -1,15 +1,19 @@
 const places = {
     italy: {
+        bologna: {
+            centro_tecnico: "Centro tecnico regionale Fijlkam - Via Lirone 46, Castel Maggiore (IT)"
+        },
         gorizia: {
             palazzetto_grado: "Palazzetto dello Sport - Piazzale Azzurri d'Italia 1, Grado (IT)"
         },
-        roma: {
-            palapellicone: "Palapellicone - Via dei Sandolini 79, Ostia Lido (IT)"
-        },
         pordenone: {
+            flora: "Palestra Flora - Via Peruzza 10, Pordenone (IT)",
             judo_azzanese: "Judo Azzanese - Via Divisione Julia 11/A, Azzano X (IT)",
             palamichieletto: "Palamichieletto - Via Cartiera Vecchia 58, Sacile (IT)",
             palazzo_ragazzoni: "Palazzo Ragazzoni - Viale P. Zanzanaro 2, Sacile (IT)"
+        },
+        roma: {
+            palapellicone: "Palapellicone - Via dei Sandolini 79, Ostia Lido (IT)"
         },
         trieste: {
             dojo_trieste: "ASD DOJO Trieste - Via dei Mille 18, Trieste (IT)",

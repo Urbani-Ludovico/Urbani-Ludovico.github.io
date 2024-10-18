@@ -14,6 +14,10 @@ const menuElements = [
             {
                 title: "Corsi",
                 href: "/judo/corsi.html"
+            },
+            {
+                title: "Gare",
+                href: "/judo/gare.html"
             }
         ]
     }
