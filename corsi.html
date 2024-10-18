@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <script src="/js/head.js"></script>
+    <script>
+        headInit({
+            title: "Judo: arbitraggi"
+        });
+    </script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/list.js"></script>
+    <script src="/js/places.js"></script>
+</head>
+<body>
+<menu>
+    <script>createMenu();</script>
+</menu>
+<header>
+    <script>headerInit();</script>
+</header>
+<main>
+    <h2 class="title">Corsi</h2>
+
+    <h3 class="subtitle">Attestati</h3>
+    <script>
+        createList({
+            events: [
+                {
+                    title: "Antincendio",
+                    dates_range: {
+                        from: "2024-10-03"
+                    },
+                    released_by: "Norma SRL"
+                },
+                {
+                    title: "Besic Life Support (BLS)",
+                    dates_range: {
+                        from: "2021-12-06"
+                    }
+                },
+                {
+                    title: "Primo soccorso",
+                    dates_range: {
+                        from: "2024-10-16"
+                    },
+                    released_by: "Norma SRL"
+                },
+            ]
+        });
+    </script>
+</main>
+</body>
+</html>

@@ -24,6 +24,10 @@ const menuElements = [
                 href: "/judo/arbitraggi.html"
             }
         ]
+    },
+    {
+        title: "Corsi",
+        href: "/corsi.html"
     }
 ];
 
