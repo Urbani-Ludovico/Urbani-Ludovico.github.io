@@ -57,7 +57,7 @@ function createTimeline({
                 content.appendChild(date);
             } else if ("dates_range" in event) {
                 const date = document.createElement("span");
-                date.innerText = "Dal " + format_date(event.dates_range.from) + " al " + format_date(event.dates_range.to);
+                date.innerText = "Dal " + format_date(event.dates_range.from) + ("to" in event.dates_range ? " al " + format_date(event.dates_range.to) : "");
                 date.classList.add("date");
                 content.appendChild(date);
             } else if ("dates" in event) {
