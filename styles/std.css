@@ -280,7 +280,60 @@ div.timeline > div.line-dot {
     width: calc(var(--radius) * 2);
 }
 
-div.timeline > div.content {
+div.timeline > div.content > div.arrow {
+    --radius: calc(var(--thick-height) * 0.5);
+
+    background-color: transparent;
+    border-bottom: calc(var(--thick-height) * 0.5) solid transparent;
+    border-right: calc(var(--thick-width)) solid var(--main-color);
+    border-top: calc(var(--thick-height) * 0.5) solid transparent;
+    height: 0;
+    left: calc(1px - var(--thick-width) - var(--border-width));
+    max-width: 100%;
+    position: absolute;
+    top: calc(0px - var(--border-width));
+    width: 0;
+}
+
+@media screen and (max-width: 400px) {
+    div.timeline {
+        --thick-height: 20px;
+        --line-width: 12px;
+    }
+}
+
+
+/**********  List  **********/
+
+div.list {
+    --content-border-width: 4px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0 10px;
+    margin: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    width: max-content;
+}
+
+div.list > div.content {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    div.list {
+        display: block;
+    }
+}
+
+
+/**********  Content  **********/
+
+div.timeline > div.content,
+div.list > div.content {
     --border-width: var(--content-border-width);
 
     border: var(--border-width) solid var(--main-color);
@@ -297,22 +350,8 @@ div.timeline > div.content {
     width: auto;
 }
 
-div.timeline > div.content > div.arrow {
-    --radius: calc(var(--thick-height) * 0.5);
-
-    background-color: transparent;
-    border-bottom: calc(var(--thick-height) * 0.5) solid transparent;
-    border-right: calc(var(--thick-width)) solid var(--main-color);
-    border-top: calc(var(--thick-height) * 0.5) solid transparent;
-    height: 0;
-    left: calc(1px - var(--thick-width) - var(--border-width));
-    max-width: 100%;
-    position: absolute;
-    top: calc(0px - var(--border-width));
-    width: 0;
-}
-
-div.timeline > div.content > * {
+div.timeline > div.content > *,
+div.list > div.content > * {
     color: black;
     display: block;
     font-size: smaller;
@@ -322,23 +361,30 @@ div.timeline > div.content > * {
 }
 
 div.timeline > div.content span.title,
-div.timeline > div.content span.subtitle {
+div.timeline > div.content span.subtitle,
+div.list > div.content span.title,
+div.list > div.content span.subtitle {
     font-weight: bold;
     margin: 0 0 10px 0
 }
 
-div.timeline > div.content span.title {
+div.timeline > div.content span.title,
+div.list > div.content span.title {
     font-size: larger;
 }
 
 div.timeline > div.content span.date,
 div.timeline > div.content span.effective-date,
 div.timeline > div.content span.place,
-div.timeline > div.content span.released-by {
+div.timeline > div.content span.released-by,
+div.list > div.content span.date,
+div.list > div.content span.place,
+div.list > div.content span.released-by {
     font-style: italic;
 }
 
-div.timeline > div.content span.date {
+div.timeline > div.content span.date,
+div.list > div.content span.date {
     margin-bottom: 10px;
 }
 
@@ -346,13 +392,7 @@ div.timeline > div.content span.result {
     font-weight: bold;
 }
 
-div.timeline > div.content > div.inner-html ul {
+div.timeline > div.content > div.inner-html ul,
+div.list > div.content > div.inner-html ul{
     padding-left: 15pt;
-}
-
-@media screen and (max-width: 400px) {
-    div.timeline {
-        --thick-height: 20px;
-        --line-width: 12px;
-    }
 }
