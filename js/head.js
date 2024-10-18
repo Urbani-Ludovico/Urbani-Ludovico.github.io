@@ -42,7 +42,7 @@ function headInit({
     const description_el = document.createElement("meta");
     description_el.name = "description";
     if (!!description) {
-        description_el.content = title + " | Ludovico Urbani - Curriculum";
+        description_el.content = description;
     } else {
         description_el.content = "Ludovico Urbani - Curriculum";
     }
