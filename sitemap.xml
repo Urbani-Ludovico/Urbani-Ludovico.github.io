@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.urbani-ludovico.github.io/</loc>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://www.urbani-ludovico.github.io/judo/altro.html</loc>
+    </url>
+    <url>
+        <loc>https://www.urbani-ludovico.github.io/judo/arbitraggi.html</loc>
+    </url>
+    <url>
+        <loc>https://www.urbani-ludovico.github.io/judo/corsi.html</loc>
+    </url>
+    <url>
+        <loc>https://www.urbani-ludovico.github.io/judo/gare.html</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.urbani-ludovico.github.io/judo/titoli.html</loc>
+        <priority>0.8</priority>
+    </url>
+</urlset>
