@@ -2,23 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.urbani-ludovico.github.io/</loc>
+        <lastmod>2024-10-01</lastmod>
         <priority>1</priority>
     </url>
     <url>
         <loc>https://www.urbani-ludovico.github.io/judo/altro.html</loc>
+        <lastmod>2024-11-10</lastmod>
     </url>
     <url>
         <loc>https://www.urbani-ludovico.github.io/judo/arbitraggi.html</loc>
+        <lastmod>2024-11-10</lastmod>
     </url>
     <url>
         <loc>https://www.urbani-ludovico.github.io/judo/corsi.html</loc>
+        <lastmod>2024-11-01</lastmod>
     </url>
     <url>
         <loc>https://www.urbani-ludovico.github.io/judo/gare.html</loc>
+        <lastmod>2024-10-05</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://www.urbani-ludovico.github.io/judo/titoli.html</loc>
+        <lastmod>2024-11-10</lastmod>
         <priority>0.8</priority>
     </url>
 </urlset>
