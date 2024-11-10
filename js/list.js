@@ -20,45 +20,45 @@ function createList({
 
             if ("title" in event) {
                 const title = document.createElement("span");
-                title.innerText = event.title;
+                title.innerHTML = event.title;
                 title.classList.add("title");
                 content.appendChild(title);
             }
 
             if ("subtitle" in event) {
                 const subtitle = document.createElement("span");
-                subtitle.innerText = event.subtitle;
+                subtitle.innerHTML = event.subtitle;
                 subtitle.classList.add("subtitle");
                 content.appendChild(subtitle);
             }
 
             if ("date" in event) {
                 const date = document.createElement("span");
-                date.innerText = format_date(event.date);
+                date.innerHTML = format_date(event.date);
                 date.classList.add("date");
                 content.appendChild(date);
             } else if ("dates_range" in event) {
                 const date = document.createElement("span");
-                date.innerText = "Dal " + format_date(event.dates_range.from) + ("to" in event.dates_range ? " al " + format_date(event.dates_range.to) : "");
+                date.innerHTML = "Dal " + format_date(event.dates_range.from) + ("to" in event.dates_range ? " al " + format_date(event.dates_range.to) : "");
                 date.classList.add("date");
                 content.appendChild(date);
             } else if ("dates" in event) {
                 const date = document.createElement("span");
-                date.innerText =  event.dates.map(d => format_date(d)).join(", ");
+                date.innerHTML =  event.dates.map(d => format_date(d)).join(", ");
                 date.classList.add("date");
                 content.appendChild(date);
             }
 
             if ("place" in event) {
                 const place = document.createElement("span");
-                place.innerText = event.place;
+                place.innerHTML = event.place;
                 place.classList.add("place");
                 content.appendChild(place);
             }
 
             if ("released_by" in event) {
                 const released_by = document.createElement("span");
-                released_by.innerText = "Rilasciato da: " + event.released_by;
+                released_by.innerHTML = "Rilasciato da: " + event.released_by;
                 released_by.classList.add("released-by");
                 content.appendChild(released_by);
             }

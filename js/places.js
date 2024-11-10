@@ -56,7 +56,7 @@ const places = {
             laipacco: "Palestra E. Cernich - Via Laipacco 96, Udine (IT)",
             latisana: "Palazzatto dello sport - Via G. Bottari 33, Latisana (IT)",
             tarcento: "Palzzetto dello Sport - Via Sottocolle Verzan 25, Tarcento (IT)",
-            uniud_scienze_motorie: "Facoltà di Scienze Motorie (UniUD) - Gemona del Friuli (IT)"
+            uniud_scienze_motorie: "Facolt&agrave; di Scienze Motorie (UniUD) - Gemona del Friuli (IT)"
         }
     },
     slovenia: {
@@ -76,8 +76,8 @@ const entities = {
         dojo_trieste: "Dojo Trieste",
         fijlkam: "Fijlkam",
         fijlkam_fvg: "Comitato Regionale Fijlkam FVG",
-        units: "Università degli Studi di Trieste",
-        uniud: "Unisersità degli Studi di Udine"
+        units: "Universit&agrave; degli Studi di Trieste",
+        uniud: "Unisersit&agrave; degli Studi di Udine"
     },
     eju: "European Judo Union"
 }
