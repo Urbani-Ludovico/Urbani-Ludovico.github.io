@@ -79,6 +79,7 @@ const entities = {
         dojo_trieste: "Dojo Trieste",
         fijlkam: "Fijlkam",
         fijlkam_fvg: "Comitato Regionale Fijlkam FVG",
+        fijlkam_kata: "Commissione Nazionale Kata Fijlkma",
         units: "Universit&agrave; degli Studi di Trieste",
         uniud: "Unisersit&agrave; degli Studi di Udine"
     },
