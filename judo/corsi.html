@@ -1,164 +1,147 @@
 <!DOCTYPE html>
 <html lang="it-IT">
-<head>
-    <script src="/js/head.js"></script>
-    <script>
-        headInit({
-            title: "Judo: corsi",
-            style: "judo"
-        });
-    </script>
-    <script src="/js/menu.js"></script>
-    <script src="/js/timeline.js"></script>
-    <script src="/js/places.js"></script>
-</head>
-<body>
-<menu>
-    <script>createMenu();</script>
-</menu>
-<header>
-    <script>headerInit();</script>
-</header>
-<main>
-    <h2 class="section">Judo</h2>
+    <head>
+        <script src="/js/head.js"></script>
+        <script>
+            headInit({
+                title: "Judo: corsi",
+                style: "judo"
+            });
+        </script>
+        <script src="/js/menu.js"></script>
+        <script src="/js/timeline.js"></script>
+        <script src="/js/places.js"></script>
+    </head>
+    <body>
+        <menu>
+            <script>createMenu();</script>
+        </menu>
+        <header>
+            <script>headerInit();</script>
+        </header>
+        <main>
+            <h2 class="section">Judo</h2>
 
-    <h3 class="title">Corsi</h3>
-    <script>
-        createTimeline({
-            events: [
-                {
-                    title: "21&deg; Stage Nazionale di Kata",
-                    date: "2024-11-23",
-                    place: places.italy.verona.le_grazie,
-                    teacher: "Giovanni Strazzeri, Monica Piredda, Giosu&egrave; Erissini, Cesare Amorosi e Sara Baldin",
-                    made_from: entities.italy.fijlkam_kata,
-                    hours: 7
-                },
-                {
-                    title: "Educare, addrestrare e allenare nelle fasi di formazione motorio-sportiva",
-                    date: "2024-10-10",
-                    place: places.italy.trieste.coni_fvg,
-                    teacher: "Stefano Gioia",
-                    made_from: entities.italy.coni_fvg_scuola,
-                    hours: 2
-                },
-                {
-                    title: "Lo sport che funziona",
-                    subtitle: "Autonomia, emozioni, amicizia, disciplina, efficacia, utilit&agrave;",
-                    date: "2024-06-05",
-                    place: places.coni_fvg,
-                    teacher: "Stefano Bearzi",
-                    made_from: entities.italy.coni_fvg_scuola,
-                    hours: 2
-                },
-                {
-                    title: "Kata Seminar & Children Kata Festival",
-                    dates_range: {
-                        from: "2024-05-25",
-                        to: "2024-05-26"
-                    },
-                    place: places.slovenia.ljubljana.dvorana_maksa,
-                    teacher: "Slaviša Bradić",
-                    made_from: entities.eju,
-                    hours: 10
-                },
-                {
-                    title: "Sport - Prevenzione - Benessere",
-                    date: "2024-05-04",
-                    place: places.italy.trieste.salone_incanti,
-                    made_from: entities.italy.units,
-                    hours: 7
-                },
-                {
-                    title: "SportivaMente",
-                    dates_range: {
-                        from: "2024-02-22",
-                        to: "2024-02-23"
-                    },
-                    place: places.italy.udine.uniud_scienze_motorie,
-                    teacher: "Stefano Canali",
-                    made_from: entities.italy.uniud,
-                    hours: 10
-                },
-                {
-                    title: "Allenare gli Under 8",
-                    dates: ["2023-12-02", "2024-01-27", "2024-04-09"],
-                    place: places.italy.udine.laipacco,
-                    teacher: "Elena Conti e Luisa Menapace",
-                    made_from: entities.italy.coni_fvg_scuola,
-                    hours: 12
-                },
-                {
-                    title: "Dal Kata alla Tecnica",
-                    date: "2023-09.10",
-                    place: places.italy.pordenone.judo_azzanese,
-                    teacher: "Piero Comino",
-                    hours: 3
-                },
-                {
-                    title: "Attivit&agrave; motoria e sportiva di base",
-                    date: "2023-06-25",
-                    place: places.italy.trieste.coni_fvg,
-                    made_from: entities.italy.coni_fvg_scuola,
-                    hours: 3
-                },
-                {
-                    title: "Allenare gli Under 8",
-                    date: "2023-04-29",
-                    place: places.italy.udine.benedetti,
-                    teacher: "Elena Conti e Luisa Menapace",
-                    made_from: entities.italy.coni_fvg_scuola,
-                    hours: 6
-                }
-            ]
-        });
-    </script>
+            <h3 class="title">Corsi</h3>
+            <script>
+                createTimeline({
+                    events: [
+                        {
+                            title: "21&deg; Stage Nazionale di Kata",
+                            date: "2024-11-23",
+                            place: places.italy.verona.le_grazie,
+                            teacher: "Giovanni Strazzeri, Monica Piredda, Giosu&egrave; Erissini, Cesare Amorosi e Sara Baldin",
+                            made_from: entities.italy.fijlkam_kata,
+                            hours: 7
+                        }, {
+                            title: "Educare, addrestrare e allenare nelle fasi di formazione motorio-sportiva",
+                            date: "2024-10-10",
+                            place: places.italy.trieste.coni_fvg,
+                            teacher: "Stefano Gioia",
+                            made_from: entities.italy.coni_fvg_scuola,
+                            hours: 2
+                        }, {
+                            title: "Lo sport che funziona",
+                            subtitle: "Autonomia, emozioni, amicizia, disciplina, efficacia, utilit&agrave;",
+                            date: "2024-06-05",
+                            place: places.coni_fvg,
+                            teacher: "Stefano Bearzi",
+                            made_from: entities.italy.coni_fvg_scuola,
+                            hours: 2
+                        }, {
+                            title: "Kata Seminar & Children Kata Festival",
+                            dates_range: {
+                                from: "2024-05-25",
+                                to: "2024-05-26"
+                            },
+                            place: places.slovenia.ljubljana.dvorana_maksa,
+                            teacher: "Slaviša Bradić",
+                            made_from: entities.eju,
+                            hours: 10
+                        }, {
+                            title: "Sport - Prevenzione - Benessere",
+                            date: "2024-05-04",
+                            place: places.italy.trieste.salone_incanti,
+                            made_from: entities.italy.units,
+                            hours: 7
+                        }, {
+                            title: "SportivaMente",
+                            dates_range: {
+                                from: "2024-02-22",
+                                to: "2024-02-23"
+                            },
+                            place: places.italy.udine.uniud_scienze_motorie,
+                            teacher: "Stefano Canali",
+                            made_from: entities.italy.uniud,
+                            hours: 10
+                        }, {
+                            title: "Allenare gli Under 8",
+                            dates: ["2023-12-02", "2024-01-27", "2024-04-09"],
+                            place: places.italy.udine.laipacco,
+                            teacher: "Elena Conti e Luisa Menapace",
+                            made_from: entities.italy.coni_fvg_scuola,
+                            hours: 12
+                        }, {
+                            title: "Dal Kata alla Tecnica",
+                            date: "2023-09.10",
+                            place: places.italy.pordenone.judo_azzanese,
+                            teacher: "Piero Comino",
+                            hours: 3
+                        }, {
+                            title: "Attivit&agrave; motoria e sportiva di base",
+                            date: "2023-06-25",
+                            place: places.italy.trieste.coni_fvg,
+                            made_from: entities.italy.coni_fvg_scuola,
+                            hours: 3
+                        }, {
+                            title: "Allenare gli Under 8",
+                            date: "2023-04-29",
+                            place: places.italy.udine.benedetti,
+                            teacher: "Elena Conti e Luisa Menapace",
+                            made_from: entities.italy.coni_fvg_scuola,
+                            hours: 6
+                        }
+                    ]
+                });
+            </script>
 
-    <h4 class="subtitle">Aggiornamento Fijlkam</h4>
-    <script>
-        createTimeline({
-            events: [
-                {
-                    title: "Arbitraggio di Kata",
-                    date: "2024-09-15",
-                    place: places.italy.pordenone.palamichieletto,
-                    teacher: "Giuliano Casco",
-                    made_from: entities.italy.fijlkam_fvg,
-                    hours: 1
-                },
-                {
-                    title: "Seiryoku Zen'yo Kokumin Tai'iku no Kata",
-                    date: "2024-09-15",
-                    place: places.italy.pordenone.palamichieletto,
-                    teacher: "Piero Comino",
-                    made_from: entities.italy.fijlkam_fvg,
-                    hours: 2
-                },
-                {
-                    title: "Il dolore nello sportivo",
-                    date: "2024-09-15",
-                    place: places.italy.pordenone.palazzo_ragazzoni,
-                    teacher: "Piero Comino",
-                    made_from: entities.italy.fijlkam_fvg,
-                    hours: 3,
-                    inner_html: "<span>Interventi:</span>" +
-                        "<ul>" +
-                        "<li>Il dolore nello sportivo: quando va temuto e quando va rispettato (Marcello Tence)</li>" +
-                        "<li>Il dolore nelle problematiche muscolo-scheletriche (Fabio Martinuzzi)</li>" +
-                        "<li>Le principali classi di Antidolorici (F. Segatti)</li>" +
-                        "</ul>"
-                },
-                {
-                    title: "Costruire una lezione: impostare i fondamentali",
-                    date: "2024-09-14",
-                    place: places.italy.pordenone.palamichieletto,
-                    teacher: "Francesco Bruyere",
-                    made_from: entities.italy.fijlkam_fvg,
-                    hours: 7
-                }
-            ]
-        });
-    </script>
-</main>
-</body>
+            <h4 class="subtitle">Aggiornamento Fijlkam</h4>
+            <script>
+                createTimeline({
+                    events: [
+                        {
+                            title: "Arbitraggio di Kata",
+                            date: "2024-09-15",
+                            place: places.italy.pordenone.palamichieletto,
+                            teacher: "Giuliano Casco",
+                            made_from: entities.italy.fijlkam_fvg,
+                            hours: 1
+                        }, {
+                            title: "Seiryoku Zen'yo Kokumin Tai'iku no Kata",
+                            date: "2024-09-15",
+                            place: places.italy.pordenone.palamichieletto,
+                            teacher: "Piero Comino",
+                            made_from: entities.italy.fijlkam_fvg,
+                            hours: 2
+                        }, {
+                            title: "Il dolore nello sportivo",
+                            date: "2024-09-15",
+                            place: places.italy.pordenone.palazzo_ragazzoni,
+                            teacher: "Piero Comino",
+                            made_from: entities.italy.fijlkam_fvg,
+                            hours: 3,
+                            inner_html: "<span>Interventi:</span>" + "<ul>" + "<li>Il dolore nello sportivo: quando va temuto e quando va rispettato (Marcello Tence)</li>" + "<li>Il dolore nelle problematiche muscolo-scheletriche (Fabio Martinuzzi)</li>" + "<li>Le principali classi di Antidolorici (F. Segatti)</li>" + "</ul>"
+                        }, {
+                            title: "Costruire una lezione: impostare i fondamentali",
+                            date: "2024-09-14",
+                            place: places.italy.pordenone.palamichieletto,
+                            teacher: "Francesco Bruyere",
+                            made_from: entities.italy.fijlkam_fvg,
+                            hours: 7
+                        }
+                    ]
+                });
+            </script>
+        </main>
+    </body>
 </html>

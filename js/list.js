@@ -1,6 +1,6 @@
 function createList({
-                            events
-                        }) {
+                        events
+                    }) {
     if (events.length > 0) {
         const s = document.getElementsByTagName("script");
         const parent = s[s.length - 1].parentElement;
@@ -44,7 +44,7 @@ function createList({
                 content.appendChild(date);
             } else if ("dates" in event) {
                 const date = document.createElement("span");
-                date.innerHTML =  event.dates.map(d => format_date(d)).join(", ");
+                date.innerHTML = event.dates.map(d => format_date(d)).join(", ");
                 date.classList.add("date");
                 content.appendChild(date);
             }
@@ -79,6 +79,7 @@ function createList({
         });
     }
 }
+
 
 function format_date(date) {
     return date;

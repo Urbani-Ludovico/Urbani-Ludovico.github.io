@@ -1,74 +1,68 @@
 <!DOCTYPE html>
 <html lang="it-IT">
-<head>
-    <script src="/js/head.js"></script>
-    <script>
-        headInit({
-            title: "Judo: arbitraggi",
-            style: "judo"
-        });
-    </script>
-    <script src="/js/menu.js"></script>
-    <script src="/js/timeline.js"></script>
-    <script src="/js/places.js"></script>
-</head>
-<body>
-<menu>
-    <script>createMenu();</script>
-</menu>
-<header>
-    <script>headerInit();</script>
-</header>
-<main>
-    <h2 class="section">Judo</h2>
+    <head>
+        <script src="/js/head.js"></script>
+        <script>
+            headInit({
+                title: "Judo: arbitraggi",
+                style: "judo"
+            });
+        </script>
+        <script src="/js/menu.js"></script>
+        <script src="/js/timeline.js"></script>
+        <script src="/js/places.js"></script>
+    </head>
+    <body>
+        <menu>
+            <script>createMenu();</script>
+        </menu>
+        <header>
+            <script>headerInit();</script>
+        </header>
+        <main>
+            <h2 class="section">Judo</h2>
 
-    <h3 class="title">Arbitraggi</h3>
+            <h3 class="title">Arbitraggi</h3>
 
-    <h4 class="subtitle">Shiai</h4>
-    <script>
-        createTimeline({
-            events: [
-                {
-                    title: "Coppa Regione FVG",
-                    date: "2024-11-09",
-                    place: places.italy.trieste.palachiarbola
-                },
-                {
-                    title: "Trofeo Citt&agrave; del Mosaico",
-                    date: "2024-10-20",
-                    place: places.italy.pordenone.favorita
-                },
-                {
-                    title: "Coppa Regione FVG",
-                    date: "2024-03-02",
-                    place: places.italy.udine.latisana
-                },
-                {
-                    title: "Trofeo Vittorio Veneto",
-                    date: "2024-02-18",
-                    place: places.italy.treviso.zoppas
-                },
-                {
-                    title: "Trofeo Citt&agrave; di Lavis",
-                    dates_range: {
-                        from: "2024-01-20",
-                        to: "2024-01-21"
-                    },
-                    place: places.italy.trento.palavis
-                },
-                {
-                    title: "Coppa Regione FVG",
-                    date: "2023-12-16",
-                    place: places.italy.gorizia.palazzetto_grado
-                },
-                {
-                    title: "Trofeo Citt&agrave; del Mosaico",
-                    date: "2023-10-15",
-                    place: places.italy.pordenone.favorita
-                }
-            ]
-        });
-    </script>
-</main>
-</body>
+            <h4 class="subtitle">Shiai</h4>
+            <script>
+                createTimeline({
+                    events: [
+                        {
+                            title: "Coppa Regione FVG",
+                            date: "2024-11-09",
+                            place: places.italy.trieste.palachiarbola
+                        }, {
+                            title: "Trofeo Citt&agrave; del Mosaico",
+                            date: "2024-10-20",
+                            place: places.italy.pordenone.favorita
+                        }, {
+                            title: "Coppa Regione FVG",
+                            date: "2024-03-02",
+                            place: places.italy.udine.latisana
+                        }, {
+                            title: "Trofeo Vittorio Veneto",
+                            date: "2024-02-18",
+                            place: places.italy.treviso.zoppas
+                        }, {
+                            title: "Trofeo Citt&agrave; di Lavis",
+                            dates_range: {
+                                from: "2024-01-20",
+                                to: "2024-01-21"
+                            },
+                            place: places.italy.trento.palavis
+                        }, {
+                            title: "Coppa Regione FVG",
+                            date: "2023-12-16",
+                            place: places.italy.gorizia.palazzetto_grado
+                        }, {
+                            title: "Trofeo Citt&agrave; del Mosaico",
+                            date: "2023-10-15",
+                            place: places.italy.pordenone.favorita
+                        }
+                    ]
+                });
+            </script>
+        </main>
+    </body>
 </html>

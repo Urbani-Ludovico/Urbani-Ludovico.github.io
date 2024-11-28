@@ -1,8 +1,8 @@
 function headInit({
                       title,
-                        description,
+                      description,
                       style
-}) {
+                  }) {
     const head = document.getElementsByTagName("head")[0];
 
     const charset = document.createElement("meta");
@@ -55,6 +55,7 @@ function headInit({
         head.appendChild(style_add);
     }
 }
+
 
 function headerInit() {
     const header = document.getElementsByTagName("header")[0];

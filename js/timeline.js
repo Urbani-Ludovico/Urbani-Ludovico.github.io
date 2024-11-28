@@ -62,7 +62,7 @@ function createTimeline({
                 content.appendChild(date);
             } else if ("dates" in event) {
                 const date = document.createElement("span");
-                date.innerHTML =  event.dates.map(d => format_date(d)).join(", ");
+                date.innerHTML = event.dates.map(d => format_date(d)).join(", ");
                 date.classList.add("date");
                 content.appendChild(date);
             }
@@ -150,6 +150,7 @@ function createTimeline({
         line.style.gridRowEnd = (row + 1).toString();
     }
 }
+
 
 function format_date(date) {
     return date;

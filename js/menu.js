@@ -1,35 +1,30 @@
-
 const menuElements = [
     {
         title: "HOME",
         href: "/"
-    },
-    {
+    }, {
         title: "Judo",
         children: [
             {
                 title: "Titoli",
                 href: "/judo/titoli.html"
-            },
-            {
+            }, {
                 title: "Corsi",
                 href: "/judo/corsi.html"
-            },
-            {
+            }, {
                 title: "Gare",
                 href: "/judo/gare.html"
-            },
-            {
+            }, {
                 title: "Arbitraggi",
                 href: "/judo/arbitraggi.html"
             }
         ]
-    },
-    {
+    }, {
         title: "Corsi",
         href: "/corsi.html"
     }
 ];
+
 
 function createMenu() {
     const menu = document.getElementsByTagName("menu")[0];
