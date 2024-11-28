@@ -48,7 +48,7 @@ function createMenu() {
 
     menuElements.forEach(element => {
         const el = document.createElement("a");
-        if (!!el.href) {
+        if (!!element.href) {
             el.href = element.href;
         }
         el.innerText = element.title;
@@ -57,7 +57,7 @@ function createMenu() {
         if ("children" in element) {
             element.children.forEach(child => {
                 const ch = document.createElement("a");
-                if (!!ch.href) {
+                if (!!child.href) {
                     ch.href = child.href;
                 }
                 ch.innerText = child.title;
