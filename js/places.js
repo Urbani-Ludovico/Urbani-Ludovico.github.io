@@ -57,6 +57,9 @@ const places = {
             latisana: "Palazzatto dello sport - Via G. Bottari 33, Latisana (IT)",
             tarcento: "Palzzetto dello Sport - Via Sottocolle Verzan 25, Tarcento (IT)",
             uniud_scienze_motorie: "Facolt&agrave; di Scienze Motorie (UniUD) - Gemona del Friuli (IT)"
+        },
+        verona: {
+            le_grazie: "Palazzetto le Grazie - Strada le Grazie 16, Verona (IT)"
         }
     },
     slovenia: {
