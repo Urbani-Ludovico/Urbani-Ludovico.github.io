@@ -76,7 +76,7 @@ const places = {
 const entities = {
     italy: {
         coni_fvg_scuola: "Scuola regionale del Coni FVG",
-        dojo_trieste: "Dojo Trieste",
+        dojo_trieste: "ASD DOJO Trieste",
         fijlkam: "Fijlkam",
         fijlkam_fvg: "Comitato Regionale Fijlkam FVG",
         fijlkam_kata: "Commissione Nazionale Kata Fijlkma",
