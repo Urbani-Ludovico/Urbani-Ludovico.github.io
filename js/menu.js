@@ -17,6 +17,9 @@ const menuElements = [
             }, {
                 title: "Arbitraggi",
                 href: "/judo/arbitraggi.html"
+            }, {
+                title: "Incarichi",
+                href: "/judo/incarichi.html"
             }
         ]
     }, {

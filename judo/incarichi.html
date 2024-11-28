@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+    <head>
+        <script src="/js/head.js"></script>
+        <script>
+            headInit({
+                title: "Judo: incarichi",
+                style: "judo"
+            });
+        </script>
+        <script src="/js/menu.js"></script>
+        <script src="/js/timeline.js"></script>
+        <script src="/js/places.js"></script>
+    </head>
+    <body>
+        <menu>
+            <script>createMenu();</script>
+        </menu>
+        <header>
+            <script>headerInit();</script>
+        </header>
+        <main>
+            <h2 class="section">Judo</h2>
+
+            <h3 class="title">Incarichi sociali</h3>
+            <script>
+                createTimeline({
+                    events: [
+                        {
+                            title: "Consigliere dell'ASD DOJO Trieste",
+                            dates_range: {
+                                from: "2023-01-01"
+                            },
+                            made_for: entities.italy.dojo_trieste
+                        }, {
+                            title: "Rappresentante atleti dell'ASD DOJO Trieste",
+                            dates_range: {
+                                from: "2023-01-01"
+                            },
+                            made_for: entities.italy.dojo_trieste
+                        }
+                    ]
+                });
+            </script>
+
+            <h3 class="title">Incarichi tecnici</h3>
+            <script>
+                createTimeline({
+                    events: [
+                        {
+                            title: "Collaboratore tecnico dell'ASD DOJO Trieste",
+                            dates_range: {
+                                from: "2024-01-01"
+                            },
+                            made_for: entities.italy.dojo_trieste
+                        }
+                    ]
+                });
+            </script>
+        </main>
+    </body>
+</html>

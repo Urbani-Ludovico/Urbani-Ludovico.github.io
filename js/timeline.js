@@ -102,6 +102,13 @@ function createTimeline({
                 content.appendChild(teacher);
             }
 
+            if ("made_for" in event) {
+                const made_for = document.createElement("span");
+                made_for.innerHTML = "Per: " + event.made_for;
+                made_for.classList.add("made-for");
+                content.appendChild(made_for);
+            }
+
             if ("made_from" in event) {
                 const made_from = document.createElement("span");
                 made_from.innerHTML = "Organizzato da: " + event.made_from;
