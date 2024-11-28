@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.urbani-ludovico.github.io/</loc>
+        <loc>https://urbani-ludovico.github.io/</loc>
         <lastmod>2024-10-01</lastmod>
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://www.urbani-ludovico.github.io/judo/arbitraggi.html</loc>
+        <loc>https://urbani-ludovico.github.io/judo/arbitraggi.html</loc>
         <lastmod>2024-11-10</lastmod>
         <priority>0.4</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.urbani-ludovico.github.io/judo/corsi.html</loc>
+        <loc>https://urbani-ludovico.github.io/judo/corsi.html</loc>
         <lastmod>2024-11-23</lastmod>
         <priority>0.6</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.urbani-ludovico.github.io/judo/gare.html</loc>
+        <loc>https://urbani-ludovico.github.io/judo/gare.html</loc>
         <lastmod>2024-11-24</lastmod>
         <priority>0.6</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.urbani-ludovico.github.io/judo/titoli.html</loc>
+        <loc>https://urbani-ludovico.github.io/judo/titoli.html</loc>
         <lastmod>2024-11-10</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
