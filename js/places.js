@@ -45,8 +45,9 @@ const places = {
             zoppas: "Zoppas Arena - Viale dello Sport 2, Conegliano (IT)"
         },
         trieste: {
-            dojo_trieste: "ASD DOJO Trieste - Via dei Mille 18, Trieste (IT)",
             coni_fvg: "Coni FVG - Via dei Macelli 5, Trieste (IT)",
+            dojo_trieste: "ASD DOJO Trieste - Via dei Mille 18, Trieste (IT)",
+            makoto: "ASD Makoto - Via P. Mascagni 3/3, Trieste (IT)",
             palachiarbola: "Palachiarbola - Via Visinada 5, Trieste (IT)",
             salone_incanti: "Salone degl Incanti - Rive Nazario Sauro, Trieste (IT)"
         },
