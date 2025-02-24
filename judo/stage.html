@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+    <head>
+        <script src="/js/head.js"></script>
+        <script>
+            headInit({
+                title: "Judo: stage",
+                style: "judo"
+            });
+        </script>
+        <script src="/js/menu.js"></script>
+        <script src="/js/timeline.js"></script>
+        <script src="/js/places.js"></script>
+    </head>
+    <body>
+        <menu>
+            <script>createMenu();</script>
+        </menu>
+        <header>
+            <script>headerInit();</script>
+        </header>
+        <main>
+            <h2 class="section">Judo</h2>
+
+            <h3 class="title">Stage</h3>
+
+            <h4 class="subtitle">Kata</h4>
+            <script>
+                createTimeline({
+                    events: [
+                        {
+                            title: "10th Croatia Kata Seminar",
+                            date: "2025-02-15",
+                            place: places.croatia.rijeka.sportska_dvorana_3,
+                            made_from: entities.croatia.judo_federation
+                        }
+                    ]
+                });
+            </script>
+        </main>
+    </body>
+</html>

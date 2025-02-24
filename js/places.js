@@ -80,6 +80,9 @@ const places = {
 }
 
 const entities = {
+    croatia: {
+        judo_federation: "Croatian Judo Federation"
+    },
     italy: {
         coni_fvg_scuola: "Scuola regionale del Coni FVG",
         dojo_trieste: "ASD DOJO Trieste",

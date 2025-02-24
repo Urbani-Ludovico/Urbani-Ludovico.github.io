@@ -15,6 +15,9 @@ const menuElements = [
                 title: "Gare",
                 href: "/judo/gare.html"
             }, {
+                title: "Stage",
+                href: "/judo/stage.html"
+            }, {
                 title: "Arbitraggi",
                 href: "/judo/arbitraggi.html"
             }, {
