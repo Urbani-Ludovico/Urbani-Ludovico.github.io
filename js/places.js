@@ -1,4 +1,9 @@
 const places = {
+    croatia: {
+        rijeka: {
+            sportska_dvorana_3: "Sportska dvorana 3 Maj - Pulska 2, Rijeka (CRO)"
+        }
+    },
     hungary: {
         gyor: {
             olympic_park: "Olympic Sports Park - Radnóti Miklós u. 46, Győr (HUN)"
