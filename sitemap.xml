@@ -7,7 +7,7 @@
     </url>
     <url>
         <loc>https://urbani-ludovico.github.io/judo/arbitraggi.html</loc>
-        <lastmod>2024-11-10</lastmod>
+        <lastmod>2025-01-19</lastmod>
         <priority>0.4</priority>
         <changefreq>monthly</changefreq>
     </url>
@@ -19,7 +19,13 @@
     </url>
     <url>
         <loc>https://urbani-ludovico.github.io/judo/gare.html</loc>
-        <lastmod>2024-11-24</lastmod>
+        <lastmod>2025-02-16</lastmod>
+        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://urbani-ludovico.github.io/judo/stage.html</loc>
+        <lastmod>2025-02-15</lastmod>
         <priority>0.6</priority>
         <changefreq>monthly</changefreq>
     </url>
