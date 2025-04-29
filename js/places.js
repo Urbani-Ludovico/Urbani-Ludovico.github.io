@@ -64,6 +64,9 @@ const places = {
             tarcento: "Palzzetto dello Sport - Via Sottocolle Verzan 25, Tarcento (ITA)",
             uniud_scienze_motorie: "Facolt&agrave; di Scienze Motorie (UniUD) - Gemona del Friuli (ITA)"
         },
+        venezia: {
+            palestra_cornaro: "Palestra E. Cornaro - Via M.L. King 5, Jesolo (ITA)"
+        },
         verona: {
             le_grazie: "Palazzetto le Grazie - Strada le Grazie 16, Verona (ITA)"
         }
