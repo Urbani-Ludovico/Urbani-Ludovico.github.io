@@ -59,6 +59,7 @@ const places = {
         udine: {
             bella_italia: "Bella Italia Village - Via Centrale 22, Lignano Sabbiadoro (ITA)",
             benedetti: "Palazzetto dello sport M. Benedetti - Via A. Marangoni 46, Udine (ITA)",
+            kuroki: "Judo Kuroki - Via G. Pascoli 31, Tarcento (ITA)",
             laipacco: "Palestra E. Cernich - Via Laipacco 96, Udine (ITA)",
             latisana: "Palazzatto dello sport - Via G. Bottari 33, Latisana (ITA)",
             tarcento: "Palzzetto dello Sport - Via Sottocolle Verzan 25, Tarcento (ITA)",
