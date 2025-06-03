@@ -20,12 +20,6 @@ function headInit({
     stylesheet_base.href = "/styles/base.css";
     head.appendChild(stylesheet_base);
 
-    const stylesheet_std = document.createElement("link");
-    stylesheet_std.rel = "stylesheet";
-    stylesheet_std.type = "text/css";
-    stylesheet_std.href = "/styles/std.css";
-    head.appendChild(stylesheet_std);
-
     const icon = document.createElement("link");
     icon.rel = "icon";
     icon.href = "/static/icon.svg";
