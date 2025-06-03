@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="it-IT">
+<html>
+    <script src="/js/init.js"></script>
+    <script src="/js/timeline.js"></script>
+    <script src="/js/places.js"></script>
     <head>
-        <script src="/js/head.js"></script>
         <script>
-            headInit({
+            createHead({
                 title: "Judo: titoli",
                 style: "judo"
             });
         </script>
-        <script src="/js/menu.js"></script>
-        <script src="/js/timeline.js"></script>
-        <script src="/js/places.js"></script>
     </head>
     <body>
-        <menu>
-            <script>createMenu();</script>
-        </menu>
-        <header>
-            <script>headerInit();</script>
-        </header>
+        <script>
+            createBody();
+        </script>
         <main>
             <h2 class="section">Judo</h2>
 
@@ -29,7 +25,7 @@
                 createTimeline({
                     events: [
                         {
-                            title: "Istrutto MGA 1° livello FIJLKAM",
+                            title: "Istrutto MGA 1&deg; livello FIJLKAM",
                             date: "2024-11-16",
                             effective_date: "2025-01-01",
                             place: places.italy.trieste.makoto,
